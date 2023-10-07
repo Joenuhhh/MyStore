@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:decorate="~{/layouts/defaultLayout}">
+
+
+
+<head>
+	<title>Checkout</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.intro {
+			color: rgb(170, 170, 255);
+		}
+
+		.product-image {
+			width: 50px;
+			/* Set the width of the image */
+		}
+	</style>
+	<div th:fragment="header">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(170, 170, 255);">
+			<div class="container-fluid">
+				<a class="navbar-brand text-white" href="#" style="font-weight: bold;">
+					<img src="/images/Tech.png" alt="Tech Central Logo" width="30" height="30"
+						class="d-inline-block align-text-top">
+					Tech Central
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="store">Store</a>
+						</li>
+						<li class="nav-item" th:if="${loggedInUser}">
+							<a class="nav-link text-white" href="cart">Cart</a>
+						</li>
+						<li class="nav-item" th:if="${loggedInUser}">
+							<a class="nav-link text-white" href="/logout">Logout</a>
+						</li>
+						<li class="nav-item" th:unless="${loggedInUser}">
+							<a class="nav-link text-white" href="/login">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="register">Register</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="addproduct">Add Product</a>
+						</li>
+					</ul>
+					<form class="form-inline ml-auto" role="search" th:action="@{/searchProduct}" method="post">
+						<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search"
+							aria-label="Search">
+						<button class="btn btn-outline-light my-2 my-sm-0" type="submit"
+							style="border-radius: 7px; font-size: 14px; text-transform: uppercase; font-weight: 600;">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<br>
+	<br>
+
+</head>
+
+<body>
+	<div class="container my-5" layout:fragment="content">
+		<div class="card">
+			<div class="card-body">
+				<div class="mb-3">
+					<h3 class="intro">Checkout Success</h3>
+					<p>Thank you for your purchase.</p>
+					<p th:text="${OrderID}">00000000</p>
+
+					<h4>Purchased Items:</h4>
+					<ul>
+						<li th:each="product : ${products}">
+							<!-- Construct the image file path based on the product category -->
+							<img th:src="@{/images/__${product.category}__.png}" class="product-image"
+								alt="Product Image">
+							<span th:text="${product.name}"></span> <!-- Displaying the name -->
+							<span th:text="${' - Price: ' + product.price}"></span> <!-- Displaying the price -->
+						</li>
+					</ul>
+					<h5>Total: <span th:text="${total}">$0.00</span></h5> <!-- Displaying the total -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<div th:fragment="footer">
+	<p class="alert alert-primary fixed-bottom"
+		style="background-color: rgb(170, 170, 255); color: white; font-size: 14px;">
+		Copyright 2023 all rights reserved.
+	</p>
+</div>
+
+</html>

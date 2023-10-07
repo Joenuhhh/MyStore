@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:decorate="~{/layouts/defaultLayout}">
+
+
+<head>
+	<title>Cart</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.btn {
+			background-color: rgb(170, 170, 255);
+			/* Button color */
+			color: #fff;
+			/* Text color */
+			border: none;
+			/* Remove border */
+			border-radius: 5px;
+			/* Rounded corners */
+			margin-bottom: 5px;
+			/* Add space beneath the button */
+		}
+
+		.card {
+			transition: box-shadow 0.3s, transform 0.3s;
+			/* Add transitions for smooth effect */
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			/* Add a slight shadow */
+		}
+
+		.text-center {
+			color: rgb(170, 170, 255);
+		}
+	</style>
+	<!-- Add your custom styles for the cart page here if needed -->
+	<div th:fragment="header">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(170, 170, 255);">
+			<div class="container-fluid">
+				<a class="navbar-brand text-white" href="#" style="font-weight: bold;">
+					<img src="/images/Tech.png" alt="Tech Central Logo" width="30" height="30"
+						class="d-inline-block align-text-top">
+					Tech Central
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="store">Store</a>
+						</li>
+						<li class="nav-item" th:if="${loggedInUser}">
+							<a class="nav-link text-white" href="cart">Cart</a>
+						</li>
+						<li class="nav-item" th:if="${loggedInUser}">
+							<a class="nav-link text-white" href="/logout">Logout</a>
+						</li>
+						<li class="nav-item" th:unless="${loggedInUser}">
+							<a class="nav-link text-white" href="/login">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="register">Register</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="addproduct">Add Product</a>
+						</li>
+					</ul>
+					<form class="form-inline ml-auto" role="search" th:action="@{/searchProduct}" method="post">
+						<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search"
+							aria-label="Search">
+						<button class="btn btn-outline-light my-2 my-sm-0" type="submit"
+							style="border-radius: 7px; font-size: 14px; text-transform: uppercase; font-weight: 600;">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<br>
+	<br>
+
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="container">
+			<br>
+			<h1 class="text-center">Your Cart</h1>
+			<br>
+
+			<div class="card-columns">
+				<div th:if="${#lists.isEmpty(cart)}">
+					<div class="card">
+						<div class="card-body text-center">
+							<p>Your cart is empty.</p>
+						</div>
+					</div>
+				</div>
+				<div th:each="product, itemNumber : ${cart}">
+					<div class="card">
+						<img th:src="@{/images/__${product.category}__.png}" class="card-img-top" alt="Product Image">
+						<div class="card-body">
+							<h5 class="card-title" th:text="${product.name}">Product Name</h5>
+							<p class="card-text" th:text="${product.description}">Product description.</p>
+							<p class="card-text">Price: <span th:text="${product.price}">1.00</span></p>
+							<p class="card-text">ID: <span th:text="${product.ID}">1.00</span></p>
+
+						</div>
+
+
+
+						<form th:action="@{/removeFromCart/__${itemNumber.index}__}" method="get">
+							<div class="card-footer d-flex justify-content-center">
+								<button type="submit" class="btn cart btn-danger">Remove from Cart</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<form action="/checkout" method="post" style="margin-top: 50px;">
+				<div class="text-center">
+					<div class="card">
+						<h3>Total</h3>
+						<h5 th:text="${total}">$0.00</h5>
+						<!-- Disable the button if the cart is empty -->
+						<button type="submit" class="btn btn-light checkout-btn"
+							th:disabled="${#lists.isEmpty(cart)}">Checkout</button>
+					</div>
+				</div>
+			</form>
+			<div class="spacing">
+				<br>
+				<br>
+				<p></p>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<div th:fragment="footer">
+	<p class="alert alert-primary fixed-bottom"
+		style="background-color: rgb(170, 170, 255); color: white; font-size: 14px;">
+		Copyright 2023 all rights reserved.
+	</p>
+</div>
+
+</html>

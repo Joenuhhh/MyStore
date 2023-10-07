@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:decorate="~{/layouts/defaultLayout}">
+
+
+
+<head>
+	<title>Products</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<div th:fragment="header">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(170, 170, 255);">
+			<div class="container-fluid">
+				<a class="navbar-brand text-white" href="#" style="font-weight: bold;">
+					<img src="/images/Tech.png" alt="Tech Central Logo" width="30" height="30"
+						class="d-inline-block align-text-top">
+					Tech Central
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="store">Store</a>
+						</li>
+						<li class="nav-item" th:if="${loggedInUser}">
+							<a class="nav-link text-white" href="cart">Cart</a>
+						</li>
+						<li class="nav-item" th:if="${loggedInUser}">
+							<a class="nav-link text-white" href="/logout">Logout</a>
+						</li>
+						<li class="nav-item" th:unless="${loggedInUser}">
+							<a class="nav-link text-white" href="/login">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="register">Register</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="addproduct">Add Product</a>
+						</li>
+					</ul>
+					<form class="form-inline ml-auto" role="search" th:action="@{/searchProduct}" method="post">
+						<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search"
+							aria-label="Search">
+						<button class="btn btn-outline-light my-2 my-sm-0" type="submit"
+							style="border-radius: 7px; font-size: 14px; text-transform: uppercase; font-weight: 600;">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<br>
+	<br>
+
+	<style>
+		/* Custom CSS for adjusting card positions */
+		.card-columns {
+			column-count: 4;
+			/* Display cards in 3 columns */
+			column-gap: 3rem;
+			/* Adjust the gap between columns */
+			margin: 0 auto;
+			/* Center the cards horizontally */
+
+
+		}
+
+		/* Optional: Adjust the width and alignment of the cards */
+		.card {
+			width: 30rem;
+			/* Adjust the card width as needed */
+			margin-bottom: 1rem;
+			/* Add some spacing between cards */
+			text-align: center;
+			/* Center the card content */
+
+		}
+
+		/* Optional: Add some padding to the card body */
+		.card-body {
+			padding: 1rem;
+		}
+
+		.btn {
+			background-color: rgb(170, 170, 255);
+			/* Button color */
+			color: #fff;
+			/* Text color */
+			border: none;
+			/* Remove border */
+
+			/* Rounded corners */
+			margin-bottom: 5px;
+			/* Add space beneath the button */
+		}
+
+		/* Optional: Style the "Add to Cart" button */
+		.btn-add-to-cart {
+			background-color: #007bff;
+			/* Blue button color */
+			color: #fff;
+			/* Text color */
+			border: 3px;
+			/* Remove border */
+			padding: 0px 0px;
+			/* Adjust button padding */
+			border-radius: 5px;
+			/* Rounded corners */
+			padding-top: 3px;
+		}
+
+		.card {
+			transition: box-shadow 0.3s, transform 0.3s;
+			/* Add transitions for smooth effect */
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			/* Add a slight shadow */
+		}
+
+		.card:hover {
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+			/* Increase shadow on hover */
+			transform: scale(1.01);
+			/* Scale the card slightly on hover */
+		}
+
+		.out-of-stock {
+			background-color: rgb(192, 192, 192);
+			/* Light grey background */
+		}
+
+		/* Optional: Add some spacing between cards and footer */
+		.container {
+			padding-bottom: 1rem;
+		}
+
+		.text-center {
+			color: rgb(170, 170, 255);
+		}
+
+		/* Style for the modal overlay */
+		.modal-overlay {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			justify-content: center;
+			align-items: center;
+		}
+
+		/* Style for the modal content */
+		.modal-content {
+			background-color: white;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		/* Style for the close button */
+		.close-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="container">
+			<br>
+			<h1 class="text-center">Best Sellers</h1>
+			<br>
+
+
+			<div class="card-columns">
+				<div th:if="${products.empty}">
+					<div class="card">
+						<div class="card-body text-center">
+							<p>No Orders Available</p>
+						</div>
+					</div>
+				</div>
+				<div th:each="product : ${products}">
+					<div th:class="${product.Quantity == 0} ? 'card out-of-stock' : 'card'">
+						<!-- Construct the image file path based on the product category -->
+						<img th:src="@{/images/__${product.category}__.png}" class="card-img-top" alt="Product Image">
+						<div class="card-body">
+							<h5 class="card-title" th:text="${product.name}">Product Name</h5>
+							<p class="card-text" th:text="${product.description}">Product description.</p>
+							<p class="card-text">Price: <span th:text="${product.price}">1.00</span></p>
+						</div>
+
+						<div class="card-footer" th:if="${session.loggedInUser != null}">
+							<form th:action="@{/addToCart}" th:object="${product}" method="post">
+								<input type="hidden" name="ID" th:value="${product.ID}" />
+								<input type="hidden" name="Name" th:value="${product.Name}" />
+								<input type="hidden" name="category" th:value="${product.category}" />
+								<input type="hidden" name="Description" th:value="${product.Description}" />
+								<input type="hidden" name="Quantity" th:value="${product.Quantity}" />
+								<input type="hidden" name="Manufacturer" th:value="${product.Manufacturer}" />
+								<input type="hidden" name="Price" th:value="${product.Price}" />
+								<button type="submit" class="btn btn-light" th:disabled="${product.Quantity == 0}">Add
+									to Cart</button>
+							</form>
+
+							<form th:action="@{/updateProduct}" th:object="${product}" method="post">
+								<input type="hidden" name="ID" th:value="*{ID}" />
+								<input type="hidden" name="Name" th:value="*{Name}" />
+								<input type="hidden" name="Category" th:value="*{Category}" />
+								<input type="hidden" name="Description" th:value="*{Description}" />
+								<input type="hidden" name="quantity" th:value="*{quantity}" />
+								<input type="hidden" name="Manufacturer" th:value="*{Manufacturer}" />
+								<input type="hidden" name="Price" th:value="*{Price}" />
+								<button type="submit" class="btn btn-light">Update</button>
+							</form>
+
+							<form th:action="@{/deleteProduct}" th:object="${product}" method="post">
+								<input type="hidden" name="ID" th:value="*{ID}" />
+								<button type="submit" class="btn btn-danger">Delete</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+
+
+
+
+
+
+</body>
+<div th:fragment="footer">
+	<p class="alert alert-primary fixed-bottom"
+		style="background-color: rgb(170, 170, 255); color: white; font-size: 14px;">
+		Copyright 2023 all rights reserved.
+	</p>
+</div>
+
+</html>

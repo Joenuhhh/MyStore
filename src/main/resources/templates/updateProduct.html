@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:decorate="~{/layouts/defaultLayout}">
+
+
+<head>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Update Product</title>
+	<style>
+		select.form-control {
+			background-color: rgb(255, 255, 255);
+			color: #333;
+			/* Update the color above to match your theme */
+		}
+
+		.input-group-text {
+			background-color: rgb(170, 170, 255);
+			color: rgb(255, 255, 255);
+			font-weight: bold;
+			/* Update the color above to match your theme */
+		}
+
+		.card-title {
+			color: rgb(170, 170, 255);
+		}
+
+		.img {
+			size: 100px
+		}
+	</style>
+</head>
+<div th:fragment="header">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgb(170, 170, 255);">
+		<div class="container-fluid">
+			<a class="navbar-brand text-white" href="#" style="font-weight: bold;">
+				<img src="/images/Tech.png" alt="Tech Central Logo" width="30" height="30"
+					class="d-inline-block align-text-top">
+				Tech Central
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link text-white" href="store">Store</a>
+					</li>
+					<li class="nav-item" th:if="${loggedInUser}">
+						<a class="nav-link text-white" href="cart">Cart</a>
+					</li>
+					<li class="nav-item" th:if="${loggedInUser}">
+						<a class="nav-link text-white" href="/logout">Logout</a>
+					</li>
+					<li class="nav-item" th:unless="${loggedInUser}">
+						<a class="nav-link text-white" href="/login">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="register">Register</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="addproduct">Add Product</a>
+					</li>
+				</ul>
+				<form class="form-inline ml-auto" role="search" th:action="@{/searchProduct}" method="post">
+					<input class="form-control mr-sm-2" type="search" name="search" placeholder="Search"
+						aria-label="Search">
+					<button class="btn btn-outline-light my-2 my-sm-0" type="submit"
+						style="border-radius: 7px; font-size: 14px; text-transform: uppercase; font-weight: 600;">Search</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+</div>
+<br>
+<br>
+
+<body>
+	<br>
+	<div class="container" layout:fragment="content">
+		<br>
+		<br>
+		<div class="card">
+			<!-- Construct the image file path based on the product category -->
+			<img th:src="@{/images/__${product.category}__.png}" class="card-img-top" alt="Product Image">
+			<div class="card-body">
+				<h3 class="card-title">Update Product</h3>
+
+				<form th:action="@{/updatedProduct}" th:object="${product}" method="post">
+
+					<div class="row">
+						<div class="col-12 mb-3">
+							<input type="text" class="form-control" th:field="*{ID}" placeholder="ID" required>
+						</div>
+						<div class="col-12 mb-3">
+							<input type="text" class="form-control" th:field="*{Name}" placeholder="Product Name"
+								required>
+						</div>
+						<div class="col-md-6 mb-3">
+							<input type="text" class="form-control" th:field="*{Description}" placeholder="Description"
+								required>
+						</div>
+						<div class="col-md-6 mb-3">
+							<input type="text" class="form-control" th:field="*{Price}" placeholder="Price" required>
+						</div>
+						<div class="col-md-6 mb-3">
+							<input type="text" class="form-control" th:field="*{Manufacturer}"
+								placeholder="Manufacturer" required>
+						</div>
+						<div class="col-md-6 mb-3">
+							<input type="text" class="form-control" th:field="*{Quantity}" placeholder="Quantity"
+								required>
+						</div>
+						<div class="input-group col-12 mb-3">
+							<div class="input-group-prepend">
+								<label class="input-group-text" for="inputGroupSelect01">Categories</label>
+							</div>
+							<select name="category" id="categories" th:field="*{category}" class="form-control">
+								<option value="Accessories">Accessories</option>
+								<option value="Case">Case</option>
+								<option value="Cooling">Cooling</option>
+								<option value="Graphics Card">Graphics Card</option>
+								<option value="Hard drive">Hard Drive</option>
+								<option value="Memory">Memory</option>
+								<option value="Monitor">Monitor</option>
+								<option value="Motherboard">Motherboard</option>
+								<option value="Power Supply">Power Supply</option>
+								<option value="Processor">Processor</option>
+							</select>
+						</div>
+						<div class="col-12 mb-3">
+							<button type="submit" class="btn btn-outline-info">Update Product</button>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<br>
+		<br>
+
+	</div>
+
+</body>
+
+</html>
