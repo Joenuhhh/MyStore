@@ -408,3 +408,300 @@ This generated password is for development use only. Your security configuration
 2023-10-07T18:09:55.547-07:00 DEBUG 7236 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 2023-10-07T18:09:55.554-07:00 DEBUG 7236 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
 2023-10-07T18:09:57.586-07:00 DEBUG 7236 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@22101c80, started on Sat Oct 07 18:09:54 MST 2023
+2023-10-07T18:19:26.763-07:00  INFO 16840 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.7 with PID 16840 (C:\Users\jonna\Desktop\MilestoneProject\target\classes started by jonna in C:\Users\jonna\Desktop\MilestoneProject)
+2023-10-07T18:19:26.765-07:00 DEBUG 16840 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-10-07T18:19:26.765-07:00  INFO 16840 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T18:19:27.843-07:00 DEBUG 16840 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:19:27.892-07:00 DEBUG 16840 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:19:27.905-07:00 DEBUG 16840 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:19:27.911-07:00 DEBUG 16840 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:19:29.135-07:00  INFO 16840 --- [restartedMain] com.gcu.MilestoneApplication             : Started MilestoneApplication in 2.622 seconds (process running for 3.067)
+2023-10-07T18:19:33.614-07:00  INFO 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T18:19:33.614-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-07T18:19:33.615-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-07T18:19:33.615-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-07T18:19:33.615-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@594b9b95
+2023-10-07T18:19:33.615-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4904773a
+2023-10-07T18:19:33.616-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-07T18:19:33.616-07:00  INFO 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-10-07T18:19:33.621-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2023-10-07T18:19:33.628-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.LoginController#display(Model)
+2023-10-07T18:19:33.668-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:19:33.847-07:00 DEBUG 16840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:19:33.860-07:00 DEBUG 16840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:19:33.864-07:00 DEBUG 16840 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:19:33.873-07:00 DEBUG 16840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:19:47.275-07:00 DEBUG 16840 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/addproduct", parameters={}
+2023-10-07T18:19:47.275-07:00 DEBUG 16840 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.ProductController#products(Model)
+2023-10-07T18:19:47.276-07:00 DEBUG 16840 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:19:47.286-07:00 DEBUG 16840 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:19:47.299-07:00 DEBUG 16840 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:19:47.300-07:00 DEBUG 16840 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:19:47.303-07:00 DEBUG 16840 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:34.795-07:00  INFO 16840 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.7 with PID 16840 (C:\Users\jonna\Desktop\MilestoneProject\target\classes started by jonna in C:\Users\jonna\Desktop\MilestoneProject)
+2023-10-07T18:23:34.796-07:00 DEBUG 16840 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-10-07T18:23:34.796-07:00  INFO 16840 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T18:23:40.625-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.7 with PID 15976 (C:\Users\jonna\Desktop\MilestoneProject\target\classes started by jonna in C:\Users\jonna\Desktop\MilestoneProject)
+2023-10-07T18:23:40.627-07:00 DEBUG 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-10-07T18:23:40.627-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T18:23:41.603-07:00  INFO 15976 --- [restartedMain] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:23:41.700-07:00 DEBUG 15976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:23:41.752-07:00 DEBUG 15976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:23:41.764-07:00 DEBUG 15976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:23:41.770-07:00 DEBUG 15976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:23:43.043-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Started MilestoneApplication in 2.671 seconds (process running for 3.115)
+2023-10-07T18:23:45.965-07:00  INFO 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T18:23:45.966-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-07T18:23:45.966-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-07T18:23:45.966-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-07T18:23:45.966-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@a148bdb
+2023-10-07T18:23:45.967-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f23aa3c
+2023-10-07T18:23:45.967-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-07T18:23:45.967-07:00  INFO 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T18:23:45.972-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/store", parameters={}
+2023-10-07T18:23:45.978-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.ProductController#showProducts(Model)
+2023-10-07T18:23:46.173-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:23:46.372-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Processor.png", parameters={}
+2023-10-07T18:23:46.372-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:23:46.373-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:23:46.377-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/Hard%20drive.png", parameters={}
+2023-10-07T18:23:46.377-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/Power%20Supply.png", parameters={}
+2023-10-07T18:23:46.377-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.377-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.377-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.377-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.378-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.379-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.380-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Cooling.png", parameters={}
+2023-10-07T18:23:46.381-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.390-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.391-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.392-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.392-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.393-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.393-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/Monitor.png", parameters={}
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Memory.png", parameters={}
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/Case.png", parameters={}
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Accessories.png", parameters={}
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/Motherboard.png", parameters={}
+2023-10-07T18:23:46.395-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.396-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.396-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.397-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.399-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.400-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.403-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.405-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.407-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.414-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Accessories.png", parameters={}
+2023-10-07T18:23:46.414-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/Case.png", parameters={}
+2023-10-07T18:23:46.415-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:23:46.415-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.415-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.415-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.416-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/Processor.png", parameters={}
+2023-10-07T18:23:46.416-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Motherboard.png", parameters={}
+2023-10-07T18:23:46.416-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Hard%20drive.png", parameters={}
+2023-10-07T18:23:46.417-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.417-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.417-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.418-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.420-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.421-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.421-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.422-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.423-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Power%20Supply.png", parameters={}
+2023-10-07T18:23:46.424-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.424-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/Memory.png", parameters={}
+2023-10-07T18:23:46.424-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/Cooling.png", parameters={}
+2023-10-07T18:23:46.424-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/Monitor.png", parameters={}
+2023-10-07T18:23:46.424-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.425-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.425-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.425-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:46.427-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.427-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.428-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:46.430-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:50.666-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2023-10-07T18:23:50.666-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.LoginController#display(Model)
+2023-10-07T18:23:50.670-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:23:50.684-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:23:50.693-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:23:50.694-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:23:50.697-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.131-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/dohome", parameters={masked}
+2023-10-07T18:24:09.131-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.LoginController#doLogin(LoginModel, BindingResult, HttpSession)
+2023-10-07T18:24:09.371-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2023-10-07T18:24:09.371-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2023-10-07T18:24:09.374-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/store", parameters={}
+2023-10-07T18:24:09.374-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.ProductController#showProducts(Model)
+2023-10-07T18:24:09.448-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:24:09.464-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:24:09.465-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.465-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/Processor.png", parameters={}
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/Hard%20drive.png", parameters={}
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Power%20Supply.png", parameters={}
+2023-10-07T18:24:09.466-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.468-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.469-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.469-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.470-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.470-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.472-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/Cooling.png", parameters={}
+2023-10-07T18:24:09.473-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.474-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Monitor.png", parameters={}
+2023-10-07T18:24:09.474-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Memory.png", parameters={}
+2023-10-07T18:24:09.474-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.474-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.475-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/Case.png", parameters={}
+2023-10-07T18:24:09.475-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.475-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.476-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.477-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.478-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.478-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Accessories.png", parameters={}
+2023-10-07T18:24:09.478-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Motherboard.png", parameters={}
+2023-10-07T18:24:09.478-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.478-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.478-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.480-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.481-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.499-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/Accessories.png", parameters={}
+2023-10-07T18:24:09.500-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Processor.png", parameters={}
+2023-10-07T18:24:09.500-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:24:09.500-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.500-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.500-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.501-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/Hard%20drive.png", parameters={}
+2023-10-07T18:24:09.501-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.501-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/Power%20Supply.png", parameters={}
+2023-10-07T18:24:09.501-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.502-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.503-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.504-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Cooling.png", parameters={}
+2023-10-07T18:24:09.505-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.506-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.506-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Memory.png", parameters={}
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/Monitor.png", parameters={}
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Motherboard.png", parameters={}
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.508-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.507-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Case.png", parameters={}
+2023-10-07T18:24:09.508-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.509-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.511-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.512-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.513-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.513-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.535-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/Accessories.png", parameters={}
+2023-10-07T18:24:09.535-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Motherboard.png", parameters={}
+2023-10-07T18:24:09.536-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/Processor.png", parameters={}
+2023-10-07T18:24:09.536-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.536-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.536-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.538-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/Hard%20drive.png", parameters={}
+2023-10-07T18:24:09.538-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Power%20Supply.png", parameters={}
+2023-10-07T18:24:09.538-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.536-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:24:09.539-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.540-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.540-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.542-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.545-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.545-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.545-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.546-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.547-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/Monitor.png", parameters={}
+2023-10-07T18:24:09.547-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Case.png", parameters={}
+2023-10-07T18:24:09.547-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Memory.png", parameters={}
+2023-10-07T18:24:09.547-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Cooling.png", parameters={}
+2023-10-07T18:24:09.547-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.547-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.548-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.549-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.550-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.551-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.551-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.552-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:24:09.608-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:24:09.609-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:24:09.612-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:08.291-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.7 with PID 15976 (C:\Users\jonna\Desktop\MilestoneProject\target\classes started by jonna in C:\Users\jonna\Desktop\MilestoneProject)
+2023-10-07T18:25:08.291-07:00 DEBUG 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-10-07T18:25:08.291-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T18:25:08.613-07:00 DEBUG 15976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:25:08.639-07:00 DEBUG 15976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:25:08.643-07:00 DEBUG 15976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:25:08.646-07:00 DEBUG 15976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:25:09.592-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Started MilestoneApplication in 1.334 seconds (process running for 89.663)
+2023-10-07T18:25:14.122-07:00  INFO 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T18:25:14.122-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-07T18:25:14.122-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-07T18:25:14.122-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-07T18:25:14.122-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4157d769
+2023-10-07T18:25:14.123-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4f902133
+2023-10-07T18:25:14.123-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-07T18:25:14.123-07:00  INFO 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-10-07T18:25:14.123-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/store", parameters={}
+2023-10-07T18:25:14.123-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.ProductController#showProducts(Model)
+2023-10-07T18:25:14.284-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:25:14.301-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.308-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:25:14.308-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.308-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/images/Processor.png", parameters={}
+2023-10-07T18:25:14.308-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/images/Graphics%20Card.png", parameters={}
+2023-10-07T18:25:14.309-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.309-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.310-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.311-07:00 DEBUG 15976 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.311-07:00 DEBUG 15976 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.315-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/Hard%20drive.png", parameters={}
+2023-10-07T18:25:14.315-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.316-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/images/Power%20Supply.png", parameters={}
+2023-10-07T18:25:14.316-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.316-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/Cooling.png", parameters={}
+2023-10-07T18:25:14.316-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.317-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/images/Case.png", parameters={}
+2023-10-07T18:25:14.317-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/Monitor.png", parameters={}
+2023-10-07T18:25:14.317-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.317-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.317-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/Memory.png", parameters={}
+2023-10-07T18:25:14.318-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.319-07:00 DEBUG 15976 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.320-07:00 DEBUG 15976 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.320-07:00 DEBUG 15976 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.320-07:00 DEBUG 15976 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.321-07:00 DEBUG 15976 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.321-07:00 DEBUG 15976 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.322-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/images/Motherboard.png", parameters={}
+2023-10-07T18:25:14.322-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.322-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Accessories.png", parameters={}
+2023-10-07T18:25:14.322-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:25:14.324-07:00 DEBUG 15976 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:14.325-07:00 DEBUG 15976 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:25:23.501-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.7 with PID 15976 (C:\Users\jonna\Desktop\MilestoneProject\target\classes started by jonna in C:\Users\jonna\Desktop\MilestoneProject)
+2023-10-07T18:25:23.501-07:00 DEBUG 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-10-07T18:25:23.501-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T18:25:23.715-07:00  INFO 15976 --- [restartedMain] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:25:23.743-07:00 DEBUG 15976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:25:23.755-07:00 DEBUG 15976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:25:23.759-07:00 DEBUG 15976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:25:23.762-07:00 DEBUG 15976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:25:24.648-07:00  INFO 15976 --- [restartedMain] com.gcu.MilestoneApplication             : Started MilestoneApplication in 1.17 seconds (process running for 104.719)
+2023-10-07T18:29:58.825-07:00 DEBUG 13356 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22101c80
+2023-10-07T18:29:59.540-07:00  INFO 13356 --- [main] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:29:59.773-07:00 DEBUG 13356 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:29:59.839-07:00 DEBUG 13356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:29:59.853-07:00 DEBUG 13356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:29:59.861-07:00 DEBUG 13356 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:30:01.960-07:00 DEBUG 13356 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@22101c80, started on Sat Oct 07 18:29:58 MST 2023
