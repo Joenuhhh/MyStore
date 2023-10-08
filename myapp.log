@@ -705,3 +705,48 @@ This generated password is for development use only. Your security configuration
 2023-10-07T18:29:59.853-07:00 DEBUG 13356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 2023-10-07T18:29:59.861-07:00 DEBUG 13356 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
 2023-10-07T18:30:01.960-07:00 DEBUG 13356 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@22101c80, started on Sat Oct 07 18:29:58 MST 2023
+2023-10-07T18:36:57.732-07:00 DEBUG 1076 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22101c80
+2023-10-07T18:36:58.436-07:00  INFO 1076 --- [main] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:36:58.677-07:00 DEBUG 1076 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:36:58.741-07:00 DEBUG 1076 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:36:58.754-07:00 DEBUG 1076 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:36:58.762-07:00 DEBUG 1076 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:37:00.830-07:00 DEBUG 1076 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@22101c80, started on Sat Oct 07 18:36:57 MST 2023
+2023-10-07T18:37:05.644-07:00  INFO 16284 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.7 with PID 16284 (C:\Users\jonna\Desktop\MilestoneProject\target\classes started by jonna in C:\Users\jonna\Desktop\MilestoneProject)
+2023-10-07T18:37:05.645-07:00 DEBUG 16284 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-10-07T18:37:05.646-07:00  INFO 16284 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T18:37:06.657-07:00  INFO 16284 --- [restartedMain] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:37:06.753-07:00 DEBUG 16284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:37:06.814-07:00 DEBUG 16284 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:37:06.826-07:00 DEBUG 16284 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:37:06.836-07:00 DEBUG 16284 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:37:08.110-07:00  INFO 16284 --- [restartedMain] com.gcu.MilestoneApplication             : Started MilestoneApplication in 2.907 seconds (process running for 3.46)
+2023-10-07T18:37:10.309-07:00  INFO 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-07T18:37:10.310-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-10-07T18:37:10.310-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2023-10-07T18:37:10.310-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2023-10-07T18:37:10.310-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@ec90c33
+2023-10-07T18:37:10.310-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@17acdbc8
+2023-10-07T18:37:10.310-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-07T18:37:10.310-07:00  INFO 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-07T18:37:10.316-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2023-10-07T18:37:10.322-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.gcu.Controllers.LoginController#display(Model)
+2023-10-07T18:37:10.340-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2023-10-07T18:37:10.531-07:00 DEBUG 16284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:37:10.543-07:00 DEBUG 16284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/Tech.png", parameters={}
+2023-10-07T18:37:10.546-07:00 DEBUG 16284 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-10-07T18:37:10.555-07:00 DEBUG 16284 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-10-07T18:38:06.642-07:00 DEBUG 14848 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22101c80
+2023-10-07T18:38:07.344-07:00  INFO 14848 --- [main] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:38:07.589-07:00 DEBUG 14848 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:38:07.653-07:00 DEBUG 14848 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:38:07.667-07:00 DEBUG 14848 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:38:07.673-07:00 DEBUG 14848 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:38:09.713-07:00 DEBUG 14848 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@22101c80, started on Sat Oct 07 18:38:06 MST 2023
+2023-10-07T18:38:27.934-07:00 DEBUG 17116 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@22101c80
+2023-10-07T18:38:28.610-07:00  INFO 17116 --- [main] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-10-07T18:38:28.845-07:00 DEBUG 17116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-07T18:38:28.910-07:00 DEBUG 17116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-10-07T18:38:28.923-07:00 DEBUG 17116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-07T18:38:28.930-07:00 DEBUG 17116 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-07T18:38:31.030-07:00 DEBUG 17116 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@22101c80, started on Sat Oct 07 18:38:27 MST 2023
