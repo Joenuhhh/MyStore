@@ -1014,3 +1014,12 @@ This generated password is for development use only. Your security configuration
 2023-11-06T18:54:57.133-07:00 DEBUG 7680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2023-11-06T18:54:57.133-07:00 DEBUG 7680 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2023-11-06T18:54:57.134-07:00 DEBUG 7680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-11-06T21:22:18.837-07:00  INFO 9288 --- [restartedMain] com.gcu.MilestoneApplication             : Starting MilestoneApplication using Java 17.0.8.1 with PID 9288 (C:\Users\jonna\MyStore\target\classes started by jonna in C:\Users\jonna\MyStore)
+2023-11-06T21:22:18.838-07:00 DEBUG 9288 --- [restartedMain] com.gcu.MilestoneApplication             : Running with Spring Boot v3.1.1, Spring v6.0.10
+2023-11-06T21:22:18.839-07:00  INFO 9288 --- [restartedMain] com.gcu.MilestoneApplication             : No active profile set, falling back to 1 default profile: "default"
+2023-11-06T21:22:19.848-07:00  INFO 9288 --- [restartedMain] com.gcu.ThymeleafConfig                  : Initializing Thymeleaf Template Resolver
+2023-11-06T21:22:19.946-07:00 DEBUG 9288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 1 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-06T21:22:19.997-07:00 DEBUG 9288 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2023-11-06T21:22:20.008-07:00 DEBUG 9288 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-06T21:22:20.014-07:00 DEBUG 9288 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-06T21:22:21.281-07:00  INFO 9288 --- [restartedMain] com.gcu.MilestoneApplication             : Started MilestoneApplication in 2.704 seconds (process running for 3.16)

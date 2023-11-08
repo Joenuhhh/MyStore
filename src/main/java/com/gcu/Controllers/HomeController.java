@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpSession;
 
 
 //did not end up using a home page. the page still exists for testing purposes only. The site default page is store. - Jonah
-
+//unnescessary comment for devops
 @Controller
 public class HomeController {
 
