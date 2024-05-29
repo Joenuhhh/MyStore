@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<img src="https://github.com/Joenuhhh/MyStore/assets/79020295/6cb2aa7b-92dc-4c6d-9816-6e2ddeecc7d9" alt="image" style="width: 100%;">
+
 
 
 <h1>Ecommerce Application</h1>
-
+<img src="https://github.com/Joenuhhh/MyStore/assets/79020295/6cb2aa7b-92dc-4c6d-9816-6e2ddeecc7d9" alt="image" style="width: 100%;">
 <h2>Introduction:</h2>
 <p>This README provides an overview of the Ecommerce Application, a Spring Boot-based project hosted on Azure. The application demonstrates CRUD operations, login functionality, and search features. It is designed to simulate an online store selling computer hardware components.</p>
 
