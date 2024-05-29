@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-![image](https://github.com/Joenuhhh/MyStore/assets/79020295/6cb2aa7b-92dc-4c6d-9816-6e2ddeecc7d9)
+<img src="https://github.com/Joenuhhh/MyStore/assets/79020295/6cb2aa7b-92dc-4c6d-9816-6e2ddeecc7d9" alt="image" style="width: 100%;">
+
 
 <h1>Ecommerce Application</h1>
 
