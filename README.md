@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Ecommerce Application</title>
-</head>
-<body>
+![image](https://github.com/Joenuhhh/MyStore/assets/79020295/6cb2aa7b-92dc-4c6d-9816-6e2ddeecc7d9)
 
 <h1>Ecommerce Application</h1>
 
